@@ -25,7 +25,8 @@
       "Bash(curl -s http://localhost:8080/admin/)",
       "Bash(pkill -f \"eleventy\")",
       "Bash(composer require:*)",
-      "Bash(git rm:*)"
+      "Bash(git rm:*)",
+      "Bash(npm remove:*)"
     ]
   }
 }
