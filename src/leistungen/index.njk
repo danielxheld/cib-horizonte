@@ -13,13 +13,13 @@ permalink: /leistungen/
 
 <section class="section section-white">
   <div class="container fade-in">
-    <p>{{ leistungen.intro }}</p>
+    <p style="margin-bottom: 0">{{ leistungen.intro }}</p>
   </div>
 </section>
 
 <section class="section section-beige">
   <div class="container fade-in">
-    <div class="grid-3">
+    <div class="grid-3" style="margin-top: 0">
       {% for item in leistungen.items %}
       <div class="card">
         <h3>{{ item.title }}</h3>
@@ -33,8 +33,34 @@ permalink: /leistungen/
 
 <section class="section section-white">
   <div class="container fade-in">
-    <h2>Meine Arbeitsweise</h2>
-    <p>{{ leistungen.arbeitsweise }}</p>
+    <h2 class="text-center">Meine Arbeitsweise</h2>
+    <div class="arbeitsweise-steps">
+      <div class="arbeitsweise-step">
+        <span class="arbeitsweise-number">1</span>
+        <span class="arbeitsweise-text">Analyse</span>
+      </div>
+      <div class="arbeitsweise-arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1E2F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </div>
+      <div class="arbeitsweise-step">
+        <span class="arbeitsweise-number">2</span>
+        <span class="arbeitsweise-text">Struktur</span>
+      </div>
+      <div class="arbeitsweise-arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1E2F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </div>
+      <div class="arbeitsweise-step">
+        <span class="arbeitsweise-number">3</span>
+        <span class="arbeitsweise-text">Umsetzung</span>
+      </div>
+      <div class="arbeitsweise-arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1E2F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </div>
+      <div class="arbeitsweise-step">
+        <span class="arbeitsweise-number">4</span>
+        <span class="arbeitsweise-text">Begleitung</span>
+      </div>
+    </div>
   </div>
 </section>
 

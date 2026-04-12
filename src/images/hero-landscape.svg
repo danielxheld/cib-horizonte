@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B8C4CC"/>
+      <stop offset="30%" stop-color="#D0CFC0"/>
+      <stop offset="60%" stop-color="#DDD8C8"/>
+      <stop offset="100%" stop-color="#E5DDCC"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1920" height="1080" fill="url(#sky2)"/>
+
+  <!-- Beige ground plane -->
+  <rect y="580" width="1920" height="500" fill="#E0D5C0"/>
+
+  <!-- Distant hills - very subtle -->
+  <path d="M0 480 L200 470 L500 460 L800 455 L1100 458 L1400 465 L1700 470 L1920 475 L1920 520 L0 520Z" fill="#9AA594" opacity="0.4"/>
+
+  <!-- Hill layer 5 - olive green, far -->
+  <path d="M0 500 L300 485 L600 478 L900 482 L1200 488 L1500 492 L1920 498 L1920 540 L0 540Z" fill="#8A9A7C"/>
+
+  <!-- Hill layer 4 -->
+  <path d="M0 520 L250 510 L500 505 L800 500 L1100 508 L1400 515 L1700 520 L1920 525 L1920 560 L0 560Z" fill="#7A8E6E"/>
+
+  <!-- Hill layer 3 - darker olive -->
+  <path d="M0 545 L400 530 L700 525 L1000 532 L1300 540 L1600 545 L1920 548 L1920 575 L0 575Z" fill="#5C6E52"/>
+
+  <!-- Hill layer 2 - dark -->
+  <path d="M0 560 L300 555 L600 548 L900 555 L1200 560 L1500 565 L1920 568 L1920 590 L0 590Z" fill="#3A4A40"/>
+
+  <!-- Hill layer 1 - darkest, navy -->
+  <path d="M0 575 L500 570 L800 565 L1100 570 L1400 575 L1920 580 L1920 600 L0 600Z" fill="#1E2F4F"/>
+
+  <!-- Subtle reflection/shadow on ground -->
+  <path d="M0 600 L1920 600 L1920 620 L0 620Z" fill="#1E2F4F" opacity="0.08"/>
+
+  <!-- Ground gradient overlay for depth -->
+  <rect y="600" width="1920" height="480" fill="#E0D5C0" opacity="0.3"/>
+</svg>

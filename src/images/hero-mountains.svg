@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C4A872"/>
+      <stop offset="40%" stop-color="#D4C9A8"/>
+      <stop offset="70%" stop-color="#E0D8C0"/>
+      <stop offset="100%" stop-color="#1E2F4F"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+
+  <!-- Mountain layer 7 - furthest back, lightest -->
+  <path d="M0 620 L200 520 L400 580 L600 500 L800 540 L1000 490 L1200 530 L1400 510 L1600 560 L1600 1000 L0 1000Z" fill="#2A3D5C" opacity="0.5"/>
+
+  <!-- Mountain layer 6 -->
+  <path d="M0 660 L150 580 L300 630 L500 550 L650 600 L850 530 L1050 590 L1200 560 L1350 580 L1600 540 L1600 1000 L0 1000Z" fill="#243551"/>
+
+  <!-- Mountain layer 5 -->
+  <path d="M0 700 L100 650 L250 690 L400 620 L550 670 L750 580 L900 640 L1100 600 L1300 650 L1500 610 L1600 630 L1600 1000 L0 1000Z" fill="#1E2F4F"/>
+
+  <!-- Path/road through mountains -->
+  <path d="M780 580 L790 620 L770 660 L785 700 L760 740 L775 780 L750 820" fill="none" stroke="#C4B99A" stroke-width="2" opacity="0.5"/>
+  <path d="M750 700 L900 720 L1050 690" fill="none" stroke="#C4B99A" stroke-width="2" opacity="0.4"/>
+
+  <!-- Mountain layer 4 -->
+  <path d="M0 750 L80 700 L200 740 L350 670 L500 730 L600 690 L700 720 L850 660 L1000 710 L1150 680 L1300 720 L1450 690 L1600 710 L1600 1000 L0 1000Z" fill="#192845"/>
+
+  <!-- Mountain layer 3 -->
+  <path d="M0 800 L120 760 L280 790 L400 740 L520 780 L680 730 L800 770 L950 740 L1100 780 L1250 750 L1400 770 L1600 760 L1600 1000 L0 1000Z" fill="#14223C"/>
+
+  <!-- Mountain layer 2 -->
+  <path d="M0 860 L150 830 L300 860 L450 820 L600 850 L750 810 L900 840 L1100 820 L1250 850 L1400 830 L1600 840 L1600 1000 L0 1000Z" fill="#0F1C33"/>
+
+  <!-- Mountain layer 1 - closest, darkest -->
+  <path d="M0 920 L200 890 L400 910 L600 880 L800 900 L1000 870 L1200 895 L1400 880 L1600 900 L1600 1000 L0 1000Z" fill="#0A1528"/>
+</svg>

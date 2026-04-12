@@ -200,8 +200,10 @@ collections:
           - label: "Erfahrung"
             name: "erfahrung"
             widget: "list"
-            field:
-              { label: "Erfahrung", name: "item", widget: "string" }
+            fields:
+              - { label: "Zeitraum", name: "period", widget: "string" }
+              - { label: "Position", name: "title", widget: "string" }
+              - { label: "Beschreibung", name: "desc", widget: "string", required: false }
           - label: "Qualifikationen"
             name: "qualifikation"
             widget: "list"
@@ -227,11 +229,7 @@ collections:
             widget: "list"
             fields:
               - { label: "Kategorie", name: "title", widget: "string" }
-              - label: "Einträge"
-                name: "items"
-                widget: "list"
-                field:
-                  { label: "Referenz", name: "item", widget: "string" }
+              - { label: "Beschreibung", name: "text", widget: "text" }
           - { label: "Hinweis", name: "note", widget: "text", required: false }
 
   # -------------------------------------------------------

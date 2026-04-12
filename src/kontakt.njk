@@ -13,14 +13,16 @@ permalink: /kontakt/
 
 <section class="section section-white">
   <div class="container fade-in">
-    <p>{{ kontakt.intro }}</p>
+    <p style="margin-bottom: 0">{{ kontakt.intro }}</p>
   </div>
 </section>
 
 <section class="section section-beige">
   <div class="container fade-in">
     <div class="contact-grid">
-      <form class="contact-form" action="/kontakt/erfolg/" method="POST" name="kontakt" data-netlify="true">
+      <form class="contact-form" id="kontaktForm">
+        <input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;height:0" tabindex="-1" autocomplete="off">
+        <input type="hidden" name="formtime" id="formtime" value="">
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required>

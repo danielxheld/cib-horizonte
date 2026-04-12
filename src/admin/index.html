@@ -4,7 +4,41 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CIB Horizonte - Admin</title>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </head>
-<body></body>
+<body>
+  <script src="https://unpkg.com/decap-cms@^3.1.3/dist/decap-cms.js"></script>
+
+  <script type="module">
+    import HomePreview from "/admin/preview-templates/home.js";
+    import LeistungenPreview from "/admin/preview-templates/leistungen.js";
+    import ServiceDetailPreview from "/admin/preview-templates/service-detail.js";
+    import CoachingPreview from "/admin/preview-templates/coaching.js";
+    import UeberMichPreview from "/admin/preview-templates/uebermich.js";
+    import ReferenzenPreview from "/admin/preview-templates/referenzen.js";
+    import KontaktPreview from "/admin/preview-templates/kontakt.js";
+    import SitePreview from "/admin/preview-templates/site.js";
+
+    // Startseite
+    CMS.registerPreviewTemplate("home", HomePreview);
+
+    // Leistungen
+    CMS.registerPreviewTemplate("leistungen_uebersicht", LeistungenPreview);
+    CMS.registerPreviewTemplate("zertifizierung", ServiceDetailPreview);
+    CMS.registerPreviewTemplate("kommunen", ServiceDetailPreview);
+    CMS.registerPreviewTemplate("gastronomie", ServiceDetailPreview);
+
+    // Einzelseiten
+    CMS.registerPreviewTemplate("coaching", CoachingPreview);
+    CMS.registerPreviewTemplate("uebermich", UeberMichPreview);
+    CMS.registerPreviewTemplate("referenzen", ReferenzenPreview);
+    CMS.registerPreviewTemplate("kontakt", KontaktPreview);
+
+    // Globale Einstellungen
+    CMS.registerPreviewTemplate("site", SitePreview);
+
+    // CSS fuer Preview laden
+    CMS.registerPreviewStyle("/css/style.css");
+    CMS.registerPreviewStyle("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+  </script>
+</body>
 </html>

@@ -12,7 +12,20 @@
       "Bash(curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/__TRACKED_VAR__)",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8081/api/v1)",
+      "Bash(curl -v -X OPTIONS http://localhost:8081/api/v1)",
+      "Bash(pkill -f \"eleventy --serve\")",
+      "Bash(pkill -f \"decap-server\")",
+      "Bash(npm ls:*)",
+      "Bash(curl -s -X POST http://localhost:8081/api/v1 -H \"Content-Type: application/json\" -H \"Origin: http://localhost:8080\" -d '{\"action\":\"info\"}' -v)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080/admin/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080/admin/index.html)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080/admin/config.yml)",
+      "Bash(curl -s http://localhost:8080/admin/)",
+      "Bash(pkill -f \"eleventy\")",
+      "Bash(composer require:*)",
+      "Bash(git rm:*)"
     ]
   }
 }

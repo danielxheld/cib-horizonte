@@ -3,6 +3,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/admin");
+  eleventyConfig.addPassthroughCopy("src/contact.php");
 
   return {
     dir: {
@@ -11,7 +12,6 @@ module.exports = function (eleventyConfig) {
       includes: "_includes",
       data: "_data",
     },
-    templateFormats: ["njk", "md", "html"],
-    htmlTemplateEngine: "njk",
+    templateFormats: ["njk", "md"],
   };
 };

@@ -23,9 +23,9 @@ permalink: /leistungen/kommunen-tourismus/
 <section class="section section-beige">
   <div class="container fade-in">
     <h2>Meine Leistungen</h2>
-    <div class="service-list">
+    <div class="service-cards">
       {% for service in kommunen.services %}
-      <div class="card">
+      <div class="service-card-item">
         <h3>{{ service.title }}</h3>
         <p>{{ service.text }}</p>
       </div>

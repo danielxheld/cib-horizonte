@@ -2,9 +2,10 @@
   "name": "cib-horizonte",
   "version": "1.0.0",
   "scripts": {
-    "dev": "npx @11ty/eleventy --serve",
+    "dev": "npx @11ty/eleventy --serve & npx decap-server",
     "build": "npx @11ty/eleventy",
-    "watch": "npx @11ty/eleventy --watch"
+    "watch": "npx @11ty/eleventy --watch",
+    "cms": "npx decap-server"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",

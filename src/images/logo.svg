@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#0F1C33"/>
+  <g transform="translate(192, 200)">
+    <!-- Vertikale Linie links -->
+    <line x1="-130" y1="-70" x2="-130" y2="58" stroke="#C4B99A" stroke-width="3"/>
+    <!-- CIB -->
+    <text x="-114" y="-18" font-family="Georgia, 'Times New Roman', serif" font-size="68" font-weight="bold" fill="#C4B99A">CIB</text>
+    <!-- Horizonte -->
+    <text x="-114" y="48" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="bold" fill="#C4B99A">Horizonte</text>
+    <!-- Carola R. Ibrom -->
+    <text x="-112" y="82" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="19" fill="#C4B99A" letter-spacing="0.3">Carola R. Ibrom</text>
+  </g>
+</svg>

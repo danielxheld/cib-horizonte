@@ -42,17 +42,41 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Contact form handling
-  const form = document.querySelector('.contact-form');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const formData = new FormData(form);
-      const data = Object.fromEntries(formData);
+  // Spam-Schutz: Zeitstempel setzen
+  const formtime = document.getElementById('formtime');
+  if (formtime) {
+    formtime.value = Date.now();
+  }
 
-      // In production, this would send to a backend
-      alert('Vielen Dank für Ihre Nachricht! Wir melden uns zeitnah bei Ihnen.');
-      form.reset();
+  // Contact form handling
+  const form = document.getElementById('kontaktForm');
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('button[type="submit"]');
+      const originalText = btn.textContent;
+      btn.textContent = 'Wird gesendet...';
+      btn.disabled = true;
+
+      try {
+        const response = await fetch('/contact.php', {
+          method: 'POST',
+          body: new FormData(form),
+        });
+        const data = await response.json();
+
+        if (data.success) {
+          form.innerHTML = '<div style="text-align:center;padding:40px 0"><h3 style="color:#1E2F4F;margin-bottom:12px">Vielen Dank!</h3><p>Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns zeitnah bei Ihnen.</p></div>';
+        } else {
+          alert(data.error || 'Ein Fehler ist aufgetreten.');
+          btn.textContent = originalText;
+          btn.disabled = false;
+        }
+      } catch (err) {
+        alert('Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es später erneut.');
+        btn.textContent = originalText;
+        btn.disabled = false;
+      }
     });
   }
 });

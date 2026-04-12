@@ -13,7 +13,7 @@ permalink: /coaching/
 
 <section class="section section-white">
   <div class="container fade-in">
-    <p>{{ coaching.intro }}</p>
+    <p style="margin-bottom: 0">{{ coaching.intro }}</p>
   </div>
 </section>
 
@@ -33,9 +33,9 @@ permalink: /coaching/
     <h2 class="text-center">Coaching-Schwerpunkte</h2>
     <div class="grid-3">
       {% for schwerpunkt in coaching.schwerpunkte %}
-      <div class="card">
+      <div class="card schwerpunkt-card">
         <h3>{{ schwerpunkt.title }}</h3>
-        <ul>
+        <ul class="schwerpunkt-list">
           {% for item in schwerpunkt.items %}
           <li>{{ item }}</li>
           {% endfor %}
@@ -49,18 +49,26 @@ permalink: /coaching/
 <section class="section section-beige">
   <div class="container fade-in">
     <h2>Meine Coaching-Haltung</h2>
-    <p>{{ coaching.haltung }}</p>
+    <p style="margin-bottom: 0">{{ coaching.haltung }}</p>
   </div>
 </section>
 
 <section class="section section-white">
   <div class="container fade-in">
-    <h2>Ablauf</h2>
-    <ol class="coaching-steps">
+    <h2 class="text-center">Ablauf</h2>
+    <div class="ablauf-steps">
       {% for step in coaching.ablauf %}
-      <li>{{ step }}</li>
+      <div class="ablauf-step">
+        <span class="ablauf-number">{{ loop.index }}</span>
+        <span class="ablauf-text">{{ step }}</span>
+      </div>
+      {% if not loop.last %}
+      <div class="ablauf-arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1E2F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+      </div>
+      {% endif %}
       {% endfor %}
-    </ol>
+    </div>
   </div>
 </section>
 

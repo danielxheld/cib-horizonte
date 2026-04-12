@@ -7,6 +7,7 @@ permalink: /ueber-mich/
 <section class="page-hero">
   <div class="container">
     <h1>{{ uebermich.title }}</h1>
+    <p>{{ uebermich.titles }}</p>
   </div>
 </section>
 
@@ -14,7 +15,7 @@ permalink: /ueber-mich/
   <div class="container fade-in">
     <div class="about-teaser">
       <div class="about-teaser-image">
-        <img src="/images/hero-landscape.jpeg" alt="{{ uebermich.name }}">
+        <img src="/images/hero-landscape.svg" alt="{{ uebermich.name }}">
       </div>
       <div>
         <h2>{{ uebermich.name }}</h2>
@@ -28,21 +29,22 @@ permalink: /ueber-mich/
 <section class="section section-beige">
   <div class="container fade-in">
     <h2>Meine Haltung</h2>
-    <p>{{ uebermich.haltung }}</p>
+    <p style="margin-bottom: 0">{{ uebermich.haltung }}</p>
   </div>
 </section>
 
 <section class="section section-white">
   <div class="container fade-in">
-    <h2>Berufliche Erfahrung</h2>
+    <h2 class="text-center">Berufliche Erfahrung</h2>
     <div class="timeline">
       {% for item in uebermich.erfahrung %}
       <div class="timeline-item">
-        <span class="timeline-period">{{ item.period }}</span>
-        <h3 class="timeline-title">{{ item.title }}</h3>
-        {% if item.desc %}
-        <p class="timeline-desc">{{ item.desc }}</p>
-        {% endif %}
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-badge">{{ item.period }}</span>
+          <h3>{{ item.title }}</h3>
+          {% if item.desc %}<p>{{ item.desc }}</p>{% endif %}
+        </div>
       </div>
       {% endfor %}
     </div>
