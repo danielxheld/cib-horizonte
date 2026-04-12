@@ -63,7 +63,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['save']) && $currentPa
             file_put_contents($filePath, json_encode($decoded, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE) . "\n");
             // Rebuild auslösen
             $projectDir = realpath(__DIR__ . '/../../');
-            exec("cd $projectDir && PATH=/usr/bin:/usr/local/bin:\$PATH /usr/bin/npx @11ty/eleventy 2>&1", $output, $code);
+            // Forge nutzt symlink "current" - zum echten Pfad auflösen
+            $resolvedDir = realpath($projectDir);
+            exec("cd $resolvedDir && PATH=/usr/bin:/usr/local/bin:\$PATH npm run build 2>&1", $output, $code);
             $buildOutput = implode("\n", $output);
             $message = $code === 0
                 ? ['type' => 'success', 'text' => 'Gespeichert und veröffentlicht!']
