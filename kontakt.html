@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt - CIB Horizonte</title>
+  <meta name="description" content="Kontaktieren Sie CIB Horizonte für ein unverbindliches Erstgespräch. Carola R. Ibrom freut sich auf Ihre Nachricht.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <img src="images/logo.jpeg" alt="CIB Horizonte Logo">
+        <div class="site-logo-text">
+          CIB Horizonte
+          <span>Carola R. Ibrom</span>
+        </div>
+      </a>
+      <button class="mobile-toggle" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li class="has-dropdown">
+            <a href="leistungen.html">Leistungen</a>
+            <ul class="dropdown">
+              <li><a href="leistungen/zertifizierungsberatung.html">Zertifizierungsberatung</a></li>
+              <li><a href="leistungen/kommunen-tourismus.html">Kommunen &amp; Tourismus</a></li>
+              <li><a href="leistungen/gastronomie-hotellerie.html">Gastronomie &amp; Hotellerie</a></li>
+            </ul>
+          </li>
+          <li><a href="coaching.html">Coaching</a></li>
+          <li><a href="ueber-mich.html">Über mich</a></li>
+          <li><a href="referenzen.html">Referenzen</a></li>
+          <li><a href="kontakt.html" class="active">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Kontakt</h1>
+      <p>Kontakt &amp; Erstgespräch</p>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p>Sie möchten mehr erfahren oder ein Projekt besprechen? Gerne lade ich Sie zu einem unverbindlichen Erstgespräch ein.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Grid -->
+  <section class="section section-beige">
+    <div class="container">
+      <div class="contact-grid fade-in">
+
+        <!-- Contact Form -->
+        <form class="contact-form" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="anliegen">Anliegen</label>
+            <select id="anliegen" name="anliegen">
+              <option value="zertifizierungsberatung">Zertifizierungsberatung</option>
+              <option value="kommunen-tourismus">Kommunen &amp; Tourismus</option>
+              <option value="gastronomie-hotellerie">Gastronomie &amp; Hotellerie</option>
+              <option value="coaching">Coaching</option>
+              <option value="sonstiges">Sonstiges</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="nachricht">Nachricht</label>
+            <textarea id="nachricht" name="nachricht" rows="6"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Nachricht senden</button>
+        </form>
+
+        <!-- Contact Info Card -->
+        <div class="contact-info-card">
+          <h3>CIB Horizonte</h3>
+          <p><strong>Carola R. Ibrom</strong></p>
+
+          <div class="contact-info-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>[Ort]</span>
+          </div>
+
+          <div class="contact-info-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            <span>[Telefon]</span>
+          </div>
+
+          <div class="contact-info-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>[E-Mail]</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container fade-in">
+      <h2>Ich freue mich auf Ihre Nachricht.</h2>
+      <p>Gemeinsam finden wir den passenden Weg für Ihr Anliegen.</p>
+      <a href="kontakt.html" class="btn btn-hero">Erstgespräch vereinbaren</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <strong>CIB Horizonte</strong>
+          <p>Beratung und Zertifizierungsbegleitung für Tourismus, Kommunen, Gastronomie und Hotellerie.</p>
+        </div>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="leistungen.html">Leistungen</a></li>
+            <li><a href="coaching.html">Coaching</a></li>
+            <li><a href="ueber-mich.html">Über mich</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div class="footer-legal">
+          <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 CIB Horizonte - Carola R. Ibrom</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

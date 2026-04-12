@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp \"/Users/daniel/workspace/cib-horizonte/WhatsApp Image 2026-01-22 at 16.30.04.jpeg\" /Users/daniel/workspace/cib-horizonte/images/hero-mountains.jpeg)",
+      "Bash(cp \"/Users/daniel/workspace/cib-horizonte/WhatsApp Image 2026-01-22 at 16.31.11.jpeg\" /Users/daniel/workspace/cib-horizonte/images/hero-landscape.jpeg)",
+      "Bash(cp \"/Users/daniel/workspace/cib-horizonte/WhatsApp Image 2026-03-26 at 17.06.00.jpeg\" /Users/daniel/workspace/cib-horizonte/images/logo.jpeg)",
+      "Bash(npm install:*)",
+      "Bash(npx:*)",
+      "Bash(open:*)",
+      "Bash(disown)",
+      "Bash(curl -s http://localhost:8080)",
+      "Bash(curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/__TRACKED_VAR__)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}

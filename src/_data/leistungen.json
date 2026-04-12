@@ -1,0 +1,23 @@
+{
+  "title": "Leistungen",
+  "subtitle": "Beratung & Zertifizierung mit Weitblick",
+  "intro": "Jede Organisation ist einzigartig – ebenso wie ihre Herausforderungen. CIB Horizonte bietet Beratung und Zertifizierungsbegleitung, die individuell, praxisnah und nachhaltig ist. Mein Ansatz verbindet Analyse, Struktur und Umsetzung – immer mit Blick auf die Menschen, die Prozesse tragen und gestalten.",
+  "items": [
+    {
+      "title": "Zertifizierungsberatung",
+      "text": "Analyse, Qualitätsstandards, Auditvorbereitung",
+      "link": "/leistungen/zertifizierungsberatung/"
+    },
+    {
+      "title": "Kommunen & Tourismus",
+      "text": "Destinationsentwicklung, Qualitätsmanagement, Projektbegleitung",
+      "link": "/leistungen/kommunen-tourismus/"
+    },
+    {
+      "title": "Gastronomie & Hotellerie",
+      "text": "Betriebsoptimierung, Positionierung, Marketing",
+      "link": "/leistungen/gastronomie-hotellerie/"
+    }
+  ],
+  "arbeitsweise": "Analyse → Struktur → Umsetzung → Begleitung"
+}

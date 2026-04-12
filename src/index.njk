@@ -1,0 +1,82 @@
+---
+layout: base.njk
+title: Startseite
+description: CIB Horizonte – Zertifizierung, Beratung und Coaching für Kommunen, Tourismus, Gastronomie & Hotellerie.
+permalink: /
+---
+
+<section class="hero">
+  <div class="hero-bg">
+    <img src="/images/hero-mountains.jpeg" alt="Berglandschaft">
+  </div>
+  <div class="container hero-content">
+    <h1>{{ home.hero.title }}</h1>
+    <p class="subtitle">{{ home.hero.subtitle }}</p>
+    <p>{{ home.hero.text }}</p>
+    <a href="/kontakt/" class="btn btn-hero">{{ home.hero.cta }}</a>
+  </div>
+</section>
+
+<section class="section section-white">
+  <div class="container text-center fade-in">
+    <h2>{{ home.welcome.title }}</h2>
+    <p>{{ home.welcome.text }}</p>
+  </div>
+</section>
+
+<section class="section section-beige">
+  <div class="container fade-in">
+    <h2 class="text-center">Leistungen</h2>
+    <div class="grid-4">
+      {% for service in home.services %}
+      <div class="card card-icon">
+        {% if loop.index == 1 %}
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"/></svg>
+        {% elif loop.index == 2 %}
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9h1"/><path d="M9 13h1"/><path d="M9 17h1"/></svg>
+        {% elif loop.index == 3 %}
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
+        {% elif loop.index == 4 %}
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        {% endif %}
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.text }}</p>
+        <a href="{{ service.link }}" class="btn btn-secondary">Mehr erfahren</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-white">
+  <div class="container fade-in">
+    <h2 class="text-center">Warum CIB Horizonte?</h2>
+    <ul class="features-list">
+      {% for usp in home.usps %}
+      <li>{{ usp }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section section-beige">
+  <div class="container fade-in">
+    <div class="about-teaser">
+      <div class="about-teaser-image">
+        <img src="/images/hero-landscape.jpeg" alt="{{ home.about_teaser.title }}">
+      </div>
+      <div>
+        <h2>{{ home.about_teaser.title }}</h2>
+        <p>{{ home.about_teaser.text }}</p>
+        <a href="/ueber-mich/" class="btn btn-primary">{{ home.about_teaser.cta }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container text-center">
+    <h2>{{ home.cta.title }}</h2>
+    <a href="/kontakt/" class="btn btn-hero">{{ home.cta.button }}</a>
+  </div>
+</section>

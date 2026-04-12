@@ -1,0 +1,51 @@
+---
+layout: base.njk
+title: Gastronomie & Hotellerie
+permalink: /leistungen/gastronomie-hotellerie/
+---
+
+<section class="page-hero">
+  <div class="container">
+    <h1>{{ gastronomie.title }}</h1>
+    <p class="subtitle">{{ gastronomie.subtitle }}</p>
+  </div>
+</section>
+
+<section class="section section-white">
+  <div class="container fade-in">
+    <div class="service-detail">
+      <p>{{ gastronomie.intro }}</p>
+      <p>{{ gastronomie.description }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-beige">
+  <div class="container fade-in">
+    <h2>Meine Leistungen</h2>
+    <div class="service-list">
+      {% for service in gastronomie.services %}
+      <div class="card">
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-white">
+  <div class="container fade-in">
+    <div class="benefit-box">
+      <h3>Ihr Nutzen</h3>
+      <p>{{ gastronomie.benefit }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container text-center">
+    <h2>Lassen Sie uns über Ihren Betrieb sprechen.</h2>
+    <a href="/kontakt/" class="btn btn-hero">Erstgespräch vereinbaren</a>
+  </div>
+</section>

@@ -1,0 +1,13 @@
+{
+  "title": "Beratung für Kommunen & Tourismus",
+  "subtitle": "Strukturierte Entwicklung für nachhaltigen Erfolg",
+  "intro": "Touristische Entwicklung in Kommunen und Destinationen braucht mehr als gute Ideen. Sie erfordert ein durchdachtes Konzept, klare Strukturen, die Einbindung aller Beteiligten und eine konsequente Umsetzbarkeit.",
+  "description": "Ich unterstütze Kommunen und touristische Organisationen dabei, ihre touristischen Strategien systematisch zu planen, umzusetzen und kontinuierlich weiterzuentwickeln.",
+  "services": [
+    { "title": "Tourismus- und Destinationskonzepte", "text": "Gemeinsam entwickeln wir Konzepte, die die Besonderheiten Ihrer Region widerspiegeln, den Bedürfnissen der Gäste gerecht werden und strategische Ziele klar definieren." },
+    { "title": "Qualitätsmanagement im Tourismus", "text": "Ich helfe dabei, Standards und Prozesse zu etablieren, die Qualität messbar machen und langfristig sichern." },
+    { "title": "Angebots- und Produktentwicklung", "text": "Wir gestalten touristische Angebote so, dass sie attraktiv, marktfähig und umsetzbar sind." },
+    { "title": "Projektbegleitung und Umsetzung", "text": "Ich begleite Sie während der gesamten Projektphase und sorge dafür, dass geplante Vorhaben erfolgreich realisiert werden." }
+  ],
+  "benefit": "Attraktive Angebote, klare Strukturen und langfristige Wirkung."
+}

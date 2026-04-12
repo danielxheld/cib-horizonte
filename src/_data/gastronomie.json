@@ -1,0 +1,13 @@
+{
+  "title": "Beratung für Gastronomie & Hotellerie",
+  "subtitle": "Betriebe erfolgreich entwickeln",
+  "intro": "Gastronomie- und Hotelbetriebe stehen heute vor vielfältigen Herausforderungen: Fachkräftemangel, steigende Kosten, wachsende Ansprüche von Gästen und die Notwendigkeit, sich klar am Markt zu positionieren.",
+  "description": "Ich begleite Gastronomie- und Hotelbetriebe dabei, ihre Organisation, Angebote und Prozesse systematisch zu optimieren.",
+  "services": [
+    { "title": "Betriebs- und Prozessoptimierung", "text": "Gemeinsam analysieren wir Abläufe, identifizieren Effizienzpotenziale und gestalten Strukturen so, dass sie den Betrieb entlasten und die Leistung steigern." },
+    { "title": "Qualitätsentwicklung und Positionierung", "text": "Ich unterstütze Sie dabei, Ihre Angebote auf höchstem Niveau zu entwickeln, Standards zu etablieren und Ihr Profil gegenüber Gästen und Wettbewerbern klar zu schärfen." },
+    { "title": "Marketing- und Angebotsstrategien", "text": "Wir entwickeln Strategien, um Ihre Angebote sichtbar zu machen, gezielt zu bewerben und Gäste nachhaltig zu binden." },
+    { "title": "Veränderungs- und Entwicklungsprozesse", "text": "Ich begleite Sie bei der Umsetzung von Neuerungen und langfristigen Entwicklungsprojekten." }
+  ],
+  "benefit": "Wirtschaftlichkeit, Qualität und strategische Ausrichtung für langfristigen Erfolg."
+}

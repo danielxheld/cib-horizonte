@@ -1,0 +1,32 @@
+{
+  "title": "Coaching",
+  "subtitle": "Raum für Klarheit und Entwicklung",
+  "intro": "Coaching bei CIB Horizonte bedeutet innehalten, sortieren und neue Perspektiven entwickeln. Ich begleite Menschen, die Verantwortung tragen, sich neu ausrichten oder bewusste Entscheidungen treffen möchten.",
+  "target_group": [
+    "Führungskräfte in Kommunen, Tourismus, Gastronomie und Hotellerie",
+    "Menschen in beruflichen Veränderungsphasen",
+    "Selbstständige und Verantwortliche mit hoher Belastung",
+    "Personen, die Klarheit und Orientierung suchen"
+  ],
+  "schwerpunkte": [
+    {
+      "title": "Führung & Verantwortung",
+      "items": ["Reflexion der eigenen Rolle", "Stärkung der persönlichen Haltung", "Umgang mit Entscheidungsdruck"]
+    },
+    {
+      "title": "Berufliche Neuorientierung",
+      "items": ["Standortbestimmung", "Entwicklung realistischer Perspektiven", "Begleitung bei Übergängen"]
+    },
+    {
+      "title": "Entscheidungen & Klarheit",
+      "items": ["Strukturieren komplexer Situationen", "Prioritäten setzen", "Sicherheit in Entscheidungen gewinnen"]
+    }
+  ],
+  "haltung": "Ich arbeite auf Augenhöhe, klar und wertschätzend. Coaching ist für mich kein vorgefertigtes Konzept, sondern ein individueller Prozess, der sich an Ihren Themen und Zielen orientiert.",
+  "ablauf": [
+    "Unverbindliches Erstgespräch",
+    "Klärung von Ziel und Rahmen",
+    "Individuelle Coaching-Sessions",
+    "Reflexion und Transfer in den Alltag"
+  ]
+}

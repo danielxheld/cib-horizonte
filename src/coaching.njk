@@ -1,0 +1,72 @@
+---
+layout: base.njk
+title: Coaching
+permalink: /coaching/
+---
+
+<section class="page-hero">
+  <div class="container">
+    <h1>{{ coaching.title }}</h1>
+    <p class="subtitle">{{ coaching.subtitle }}</p>
+  </div>
+</section>
+
+<section class="section section-white">
+  <div class="container fade-in">
+    <p>{{ coaching.intro }}</p>
+  </div>
+</section>
+
+<section class="section section-beige">
+  <div class="container fade-in">
+    <h2>Für wen?</h2>
+    <ul class="features-list">
+      {% for item in coaching.target_group %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section section-white">
+  <div class="container fade-in">
+    <h2 class="text-center">Coaching-Schwerpunkte</h2>
+    <div class="grid-3">
+      {% for schwerpunkt in coaching.schwerpunkte %}
+      <div class="card">
+        <h3>{{ schwerpunkt.title }}</h3>
+        <ul>
+          {% for item in schwerpunkt.items %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-beige">
+  <div class="container fade-in">
+    <h2>Meine Coaching-Haltung</h2>
+    <p>{{ coaching.haltung }}</p>
+  </div>
+</section>
+
+<section class="section section-white">
+  <div class="container fade-in">
+    <h2>Ablauf</h2>
+    <ol class="coaching-steps">
+      {% for step in coaching.ablauf %}
+      <li>{{ step }}</li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container text-center">
+    <h2>Lassen Sie uns ins Gespräch kommen.</h2>
+    <a href="/kontakt/" class="btn btn-hero">Erstgespräch vereinbaren</a>
+  </div>
+</section>

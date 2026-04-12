@@ -1,0 +1,76 @@
+---
+layout: base.njk
+title: Über mich
+permalink: /ueber-mich/
+---
+
+<section class="page-hero">
+  <div class="container">
+    <h1>{{ uebermich.title }}</h1>
+  </div>
+</section>
+
+<section class="section section-white">
+  <div class="container fade-in">
+    <div class="about-teaser">
+      <div class="about-teaser-image">
+        <img src="/images/hero-landscape.jpeg" alt="{{ uebermich.name }}">
+      </div>
+      <div>
+        <h2>{{ uebermich.name }}</h2>
+        <p><strong>{{ uebermich.role }}</strong></p>
+        <p>{{ uebermich.titles }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-beige">
+  <div class="container fade-in">
+    <h2>Meine Haltung</h2>
+    <p>{{ uebermich.haltung }}</p>
+  </div>
+</section>
+
+<section class="section section-white">
+  <div class="container fade-in">
+    <h2>Berufliche Erfahrung</h2>
+    <div class="timeline">
+      {% for item in uebermich.erfahrung %}
+      <div class="timeline-item">
+        <span class="timeline-period">{{ item.period }}</span>
+        <h3 class="timeline-title">{{ item.title }}</h3>
+        {% if item.desc %}
+        <p class="timeline-desc">{{ item.desc }}</p>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-beige">
+  <div class="container fade-in">
+    <h2>Ausbildung & Qualifikation</h2>
+    <ul class="features-list">
+      {% for item in uebermich.qualifikation %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section section-white">
+  <div class="container fade-in">
+    <blockquote>
+      <p>{{ uebermich.anspruch }}</p>
+    </blockquote>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container text-center">
+    <h2>Lassen Sie uns über Ihre Ziele sprechen.</h2>
+    <a href="/kontakt/" class="btn btn-hero">Erstgespräch vereinbaren</a>
+  </div>
+</section>

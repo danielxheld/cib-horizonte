@@ -1,0 +1,13 @@
+{
+  "title": "Zertifizierungsberatung",
+  "subtitle": "Qualität sichtbar machen",
+  "intro": "Zertifizierungen schaffen Orientierung, Vertrauen und Qualität – wenn sie sinnvoll umgesetzt werden. Touristische Zertifizierungen sind ein wertvolles Instrument, um die Qualität von Angeboten klar erkennbar zu machen, Vertrauen bei Gästen aufzubauen und die Attraktivität von Destinationen oder Betrieben zu steigern.",
+  "description": "Als erfahrene Prüferin und Zertifiziererin begleite ich Sie direkt im gesamten Prozess der touristischen Zertifizierung. Mein Ziel ist es, Ihre Angebote strukturiert zu bewerten, Ihre Stärken sichtbar zu machen und sicherzustellen, dass alle Kriterien der jeweiligen Zertifizierung erfüllt werden.",
+  "services": [
+    { "title": "Analyse Ihrer Angebote und Strukturen", "text": "Ich prüfe Ihre touristischen Leistungen auf Basis der Zertifizierungskriterien und identifiziere Bereiche, die besonders hervorzuheben sind oder angepasst werden sollten." },
+    { "title": "Durchführung der Zertifizierung", "text": "Ich begleite Sie direkt durch den gesamten Zertifizierungsprozess, überprüfe die Anforderungen und stelle sicher, dass alle Standards eingehalten werden." },
+    { "title": "Offizielle Auszeichnung", "text": "Nach erfolgreicher Prüfung erhalten Sie das Zertifikat, das Ihre Qualität sichtbar macht und offiziell bestätigt." },
+    { "title": "Beratung zur nachhaltigen Qualität", "text": "Zusätzlich unterstütze ich Sie dabei, die geprüfte Qualität langfristig zu verankern und kontinuierlich weiterzuentwickeln." }
+  ],
+  "benefit": "Sicherheit, Klarheit und nachhaltig verankerte Qualität."
+}

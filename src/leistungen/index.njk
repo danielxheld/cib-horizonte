@@ -1,0 +1,46 @@
+---
+layout: base.njk
+title: Leistungen
+permalink: /leistungen/
+---
+
+<section class="page-hero">
+  <div class="container">
+    <h1>{{ leistungen.title }}</h1>
+    <p class="subtitle">{{ leistungen.subtitle }}</p>
+  </div>
+</section>
+
+<section class="section section-white">
+  <div class="container fade-in">
+    <p>{{ leistungen.intro }}</p>
+  </div>
+</section>
+
+<section class="section section-beige">
+  <div class="container fade-in">
+    <div class="grid-3">
+      {% for item in leistungen.items %}
+      <div class="card">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.text }}</p>
+        <a href="{{ item.link }}" class="btn btn-secondary">Mehr erfahren</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-white">
+  <div class="container fade-in">
+    <h2>Meine Arbeitsweise</h2>
+    <p>{{ leistungen.arbeitsweise }}</p>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container text-center">
+    <h2>Lassen Sie uns über Ihre Ziele sprechen.</h2>
+    <a href="/kontakt/" class="btn btn-hero">Erstgespräch vereinbaren</a>
+  </div>
+</section>

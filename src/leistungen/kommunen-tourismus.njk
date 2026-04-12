@@ -1,0 +1,51 @@
+---
+layout: base.njk
+title: Kommunen & Tourismus
+permalink: /leistungen/kommunen-tourismus/
+---
+
+<section class="page-hero">
+  <div class="container">
+    <h1>{{ kommunen.title }}</h1>
+    <p class="subtitle">{{ kommunen.subtitle }}</p>
+  </div>
+</section>
+
+<section class="section section-white">
+  <div class="container fade-in">
+    <div class="service-detail">
+      <p>{{ kommunen.intro }}</p>
+      <p>{{ kommunen.description }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-beige">
+  <div class="container fade-in">
+    <h2>Meine Leistungen</h2>
+    <div class="service-list">
+      {% for service in kommunen.services %}
+      <div class="card">
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-white">
+  <div class="container fade-in">
+    <div class="benefit-box">
+      <h3>Ihr Nutzen</h3>
+      <p>{{ kommunen.benefit }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container text-center">
+    <h2>Lassen Sie uns über Ihre Ziele sprechen.</h2>
+    <a href="/kontakt/" class="btn btn-hero">Erstgespräch vereinbaren</a>
+  </div>
+</section>

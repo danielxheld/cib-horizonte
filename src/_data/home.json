@@ -1,0 +1,50 @@
+{
+  "hero": {
+    "title": "Qualität entwickeln. Perspektiven eröffnen. Horizonte erweitern.",
+    "subtitle": "Zertifizierung · Beratung · Coaching",
+    "text": "Professionelle Begleitung für Kommunen, Tourismus, Gastronomie & Hotellerie – von der strategischen Beratung bis zur erfolgreichen Zertifizierung.",
+    "cta": "Erstgespräch vereinbaren"
+  },
+  "welcome": {
+    "title": "Willkommen bei CIB Horizonte",
+    "text": "CIB Horizonte begleitet Kommunen, touristische Organisationen sowie Betriebe aus Gastronomie und Hotellerie bei Zertifizierungen, strategischer Entwicklung und nachhaltiger Qualitätsarbeit. Ergänzend unterstütze ich Menschen im persönlichen Coaching – klar, wertschätzend und lösungsorientiert. Mit über 30 Jahren Berufs- und Führungserfahrung verbinde ich Praxisnähe mit fundierter Beratung und einem Blick für realistische, umsetzbare Lösungen."
+  },
+  "services": [
+    {
+      "title": "Zertifizierungsberatung",
+      "text": "Strukturierte Begleitung auf dem Weg zur erfolgreichen Zertifizierung – von der Analyse über die Umsetzung bis zum Audit.",
+      "link": "/leistungen/zertifizierungsberatung/"
+    },
+    {
+      "title": "Kommunen & Tourismus",
+      "text": "Strategische Beratung für Kommunen und touristische Organisationen – für zukunftsfähige Strukturen und nachhaltige Entwicklung.",
+      "link": "/leistungen/kommunen-tourismus/"
+    },
+    {
+      "title": "Gastronomie & Hotellerie",
+      "text": "Praxisnahe Unterstützung für Gastronomie- und Hotelleriebetriebe – Qualität sichern, Prozesse optimieren, Gäste begeistern.",
+      "link": "/leistungen/gastronomie-hotellerie/"
+    },
+    {
+      "title": "Coaching",
+      "text": "Individuelle Begleitung für Führungskräfte und Menschen in Veränderungsphasen – für mehr Klarheit und persönliche Weiterentwicklung.",
+      "link": "/coaching/"
+    }
+  ],
+  "usps": [
+    "Über 30 Jahre Berufs- und Führungserfahrung",
+    "Strukturierte & praxisnahe Beratung",
+    "Tiefes Verständnis für kommunale und touristische Strukturen",
+    "Persönliche, individuelle Begleitung",
+    "Klarheit, Verlässlichkeit und Wertschätzung"
+  ],
+  "about_teaser": {
+    "title": "Carola R. Ibrom",
+    "text": "Mit über drei Jahrzehnten Erfahrung in Führungspositionen der Tourismus- und Dienstleistungsbranche bringe ich ein tiefes Verständnis für die Herausforderungen und Chancen mit, die Kommunen, touristische Organisationen und Gastgewerbebetriebe bewegen.",
+    "cta": "Über mich"
+  },
+  "cta": {
+    "title": "Lassen Sie uns über Ihre Ziele sprechen.",
+    "button": "Erstgespräch vereinbaren"
+  }
+}
