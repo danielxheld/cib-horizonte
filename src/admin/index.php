@@ -63,13 +63,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['save']) && $currentPa
             file_put_contents($filePath, json_encode($decoded, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE) . "\n");
             // Rebuild auslösen
             $projectDir = realpath(__DIR__ . '/../../');
-            // Forge nutzt symlink "current" - zum echten Pfad auflösen
-            $resolvedDir = realpath($projectDir);
-            exec("cd $resolvedDir && PATH=/usr/bin:/usr/local/bin:\$PATH npm run build 2>&1", $output, $code);
-            $buildOutput = implode("\n", $output);
-            $message = $code === 0
+            $buildCmd = "cd $projectDir && PATH=/usr/bin:/usr/local/bin:\$PATH npm run build 2>&1";
+            $buildOutput = shell_exec($buildCmd);
+            $success = $buildOutput && str_contains($buildOutput, 'Wrote');
+            $message = $success
                 ? ['type' => 'success', 'text' => 'Gespeichert und veröffentlicht!']
-                : ['type' => 'error', 'text' => 'Build fehlgeschlagen (Code ' . $code . '): ' . htmlspecialchars($buildOutput)];
+                : ['type' => 'error', 'text' => 'Build: ' . htmlspecialchars($buildOutput ?: 'Keine Ausgabe - exec/shell_exec möglicherweise blockiert')];
         } else {
             $message = ['type' => 'error', 'text' => 'Ungültiges JSON. Bitte prüfen Sie die Eingabe.'];
         }
