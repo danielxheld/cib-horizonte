@@ -64,9 +64,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['save']) && $currentPa
             // Rebuild auslösen
             $projectDir = realpath(__DIR__ . '/../../');
             exec("cd $projectDir && PATH=/usr/bin:/usr/local/bin:\$PATH /usr/bin/npx @11ty/eleventy 2>&1", $output, $code);
+            $buildOutput = implode("\n", $output);
             $message = $code === 0
                 ? ['type' => 'success', 'text' => 'Gespeichert und veröffentlicht!']
-                : ['type' => 'error', 'text' => 'Gespeichert, aber Build fehlgeschlagen.'];
+                : ['type' => 'error', 'text' => 'Build fehlgeschlagen (Code ' . $code . '): ' . htmlspecialchars($buildOutput)];
         } else {
             $message = ['type' => 'error', 'text' => 'Ungültiges JSON. Bitte prüfen Sie die Eingabe.'];
         }
