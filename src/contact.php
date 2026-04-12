@@ -5,6 +5,15 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
+// .env laden
+$envFile = __DIR__ . '/../.env';
+if (file_exists($envFile)) {
+    foreach (file($envFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $line) {
+        if (str_starts_with(trim($line), '#')) continue;
+        putenv(trim($line));
+    }
+}
+
 header('Content-Type: application/json');
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -13,15 +22,12 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
-// ============================================
-// SMTP-Zugangsdaten hier eintragen
-// ============================================
-$smtpHost     = 'mail.example.com';      // SMTP-Server
-$smtpPort     = 587;                      // Port (587 = TLS, 465 = SSL)
-$smtpUser     = 'info@cib-horizonte.de';  // SMTP-Benutzername
-$smtpPass     = '';                       // SMTP-Passwort
-$empfaenger   = 'info@cib-horizonte.de';  // Empfänger der Kontaktanfragen
-// ============================================
+$smtpHost   = getenv('SMTP_HOST');
+$smtpPort   = intval(getenv('SMTP_PORT') ?: 587);
+$smtpUser   = getenv('SMTP_USER');
+$smtpPass   = getenv('SMTP_PASS');
+$smtpFrom   = getenv('SMTP_FROM') ?: $smtpUser;
+$empfaenger = getenv('CONTACT_TO') ?: $smtpUser;
 
 // Spam-Schutz: Honeypot
 if (!empty($_POST['website'])) {
@@ -60,7 +66,7 @@ try {
     $mail->Port       = $smtpPort;
     $mail->CharSet    = 'UTF-8';
 
-    $mail->setFrom($smtpUser, 'CIB Horizonte Website');
+    $mail->setFrom($smtpFrom, 'CIB Horizonte Website');
     $mail->addAddress($empfaenger);
     $mail->addReplyTo($email, $name);
 
