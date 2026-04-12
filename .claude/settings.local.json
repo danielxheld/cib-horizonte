@@ -26,7 +26,8 @@
       "Bash(pkill -f \"eleventy\")",
       "Bash(composer require:*)",
       "Bash(git rm:*)",
-      "Bash(npm remove:*)"
+      "Bash(npm remove:*)",
+      "Bash(git push:*)"
     ]
   }
 }
