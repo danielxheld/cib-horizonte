@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
-  <rect width="400" height="400" fill="#0F1C33"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="50 115 320 200" width="320" height="200">
+  <rect x="50" y="115" width="320" height="200" fill="#0F1C33"/>
   <g transform="translate(192, 200)">
     <!-- Vertikale Linie links -->
     <line x1="-130" y1="-70" x2="-130" y2="58" stroke="#C4B99A" stroke-width="3"/>
@@ -7,7 +7,9 @@
     <text x="-114" y="-18" font-family="Georgia, 'Times New Roman', serif" font-size="68" font-weight="bold" fill="#C4B99A">CIB</text>
     <!-- Horizonte -->
     <text x="-114" y="48" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="bold" fill="#C4B99A">Horizonte</text>
-    <!-- Carola R. Ibrom -->
-    <text x="-112" y="82" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="19" fill="#C4B99A" letter-spacing="0.3">Carola R. Ibrom</text>
+    <!-- Trennlinie -->
+    <line x1="-114" y1="74" x2="160" y2="74" stroke="#C4B99A" stroke-width="1" opacity="0.55"/>
+    <!-- Carola R. Ibrom (uppercase, letter-spaced) -->
+    <text x="-114" y="102" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="25" font-weight="400" fill="#C4B99A" letter-spacing="5">CAROLA R. IBROM</text>
   </g>
 </svg>
