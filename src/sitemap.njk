@@ -1,0 +1,18 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- set today = page.date | default(now) -%}
+{%- for entry in collections.all -%}
+  {%- if entry.url and not entry.data.eleventyExcludeFromCollections and entry.url != "/sitemap.xml" -%}
+  <url>
+    <loc>{{ site.url }}{{ entry.url }}</loc>
+    <lastmod>{{ entry.date.toISOString() }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>{% if entry.url == "/" %}1.0{% elif entry.url == "/impressum/" or entry.url == "/datenschutz/" %}0.3{% else %}0.7{% endif %}</priority>
+  </url>
+  {%- endif -%}
+{%- endfor %}
+</urlset>
